@@ -1,73 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Vinharia</title>
-      <link rel="stylesheet" href="./src/css/style.css" />
-    </head>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinharia</title>
+  <!-- Fontes -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap">
+  <!-- Link do CSS -->
+  <link rel="stylesheet" href="src/CSS/style.css" />
+</head>
 
-    <body>
-      <div id="container">
-          <header>
-            <h1>Vinhos em Destaque:</h1>
-            <h2></h2>
-          </header>
-      
-        <section id="conteudo">
+<body>
+  <header>
+    <h1>Vinharia</h1>
+    <nav>
+      <ul>
+        <!-- Links de navegação para seções da página  -->
+        <li><a href="">Início</a></li>
+        <li><a href="#vinhos">Vinhos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-          <div class="produto">
-              <img src="./src/assets/vinho_branco.png" alt="Vinho Branco">
-              <h3>Vinho Branco</h3>
-              <p class="preco">R$ 59,90</p>
-          </div>
-          
-          <div class="produto">
-              <img src="./src/assets/suave_mediterraneo.png" alt="Suave Rosé Mediterrâneo">
-              <h3>Suave Rosé Mediterrâneo</h3>
-              <p class="preco">R$ 99,00</p>
-          </div>
-              
-          <div class="produto">
-              <img src="./src/assets/cabernet_sauvignon.png" alt="Cabernet Sauvignon">
-              <h3>Cabernet Sauvignon</h3>
-              <p class="preco">R$ 74,50</p>
-          </div>
+  <main>
+    <!-- Primeira seção -->
+    <section class="inicio">
+      <h2>Descubra os melhores vinhos</h2>
+      <p>Seleção especial de vinhos nacionais e importados.</p>
+    </section>
 
-          <div class="produto">
-              <img src="./src/assets/merlot_premium.png" alt="Merlot Premium">
-              <h3>Merlot Premium</h3>
-              <p class="preco">R$ 79,90</p>
-          </div>
+    <!-- Galeria de vinhos utilizando grade -->
+    <section id="vinhos" class="grid-vinhos">
+      <article class="vinho">
+        <img src="src/assets/cabernet_sauvignon.png" alt="Cabernet Sauvignon">
+        <h3>Cabernet Sauvignon</h3>
+        <p>Encorpado e elegante, perfeito para carnes vermelhas.</p>
+      </article>
+      <article class="vinho">
+        <img src="src/assets/merlot_premium.png" alt="Merlot Premium">
+        <h3>Merlot Premium</h3>
+        <p>Notas frutadas com final suave.</p>
+      </article>
+      <article class="vinho">
+        <img src="src/assets/suave_mediterraneo.png" alt="Suave Mediterrâneo">
+        <h3>Suave Mediterrâneo</h3>
+        <p>Vinho leve ideal para dias quentes.</p>
+      </article>
+      <article class="vinho">
+        <img src="src/assets/vinho_do_porto.png" alt="Vinho do Porto">
+        <h3>Vinho do Porto</h3>
+        <p>Doce e intenso, excelente para sobremesas.</p>
+      </article>
+    </section>
+  </main>
 
-          <div class="produto">
-              <img src="./src/assets/vinho_do_porto.png" alt="Vinho do Porto">
-              <h3>Vinho do Porto</h3>
-              <p class="preco">R$ 120,00</p>
-          </div>
+  <!-- Rodapé com informações de contato -->
+  <footer id="contato">
+    <p>Contato: vinharia@email.com</p>
+    <p>2025 Vinharia.</p>
+  </footer>
 
-          <div class="produto">
-              <img src="./src/assets/vinho_reserva.png" alt="Vinho Tinto Reserva">
-              <h3>Vinho Tinto Reserva</h3>
-              <p class="preco">R$ 95,00</p>
-          </div>
-        </section>
+  <!-- Puxando JS caso necessario -->
+  <script src="src/JS/script.js"></script>
+</body>
 
-        <div id="sobre">
-            <aside class="informacoes">
-              <h2>Sobre a Vinharia</h2>
-              <p>Selecionamos cuidadosamente vinhos de qualidade, nacionais e importados, para todos os gostos e ocasiões.</p>
-              <h3>Contato</h3>
-              <p>Email: contato@vinharia.com</p>
-              <p>Tel: (11) 99999-9999</p>
-              <h3>Funcionamento</h3>
-              <p>Seg a Sáb: 10h às 20h</p>
-            </aside>
-        </div>
-
-          <footer>
-            <p>Vinheria Agnello all rights reserved</p>
-          </footer>
-      </div>  
-    </body>
-    </html>
+</html>
